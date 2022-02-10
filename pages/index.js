@@ -43,7 +43,7 @@ export default function Home() {
            <SearchIcon 
             className='h-5 mr-3 text-gray-500'
            />
-           <input type={'text'} className='focus:outline-none flex-grow'/>
+           <input autoComplete='none' type={'text'} className='focus:outline-none flex-grow'/>
            <MicrophoneIcon
               className='h-5 '
            />
