@@ -1,7 +1,10 @@
+import { GlobeIcon } from "@heroicons/react/solid"
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+        
+    </footer>
   )
 }
 
