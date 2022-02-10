@@ -26,7 +26,7 @@ const Header = () => {
             onClick={()=> router.push('/')}
         />
 
-        <form className='flex border border-gray-200 rounded-full 
+        <form className='flex flex-grow border border-gray-200 rounded-full 
         shadow-lg max-w-3xl px-6 py-3 ml-10 mr-5 items-center'>
             <input type='text' ref={searchInputRef}
                 className={'flex-grow w-full focus:outline-none'}
