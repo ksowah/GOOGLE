@@ -3,6 +3,7 @@ import Button from '../components/Button'
 import { MicrophoneIcon, ViewGridIcon } from '@heroicons/react/solid'
 import { SearchIcon } from '@heroicons/react/outline'
 import Image from 'next/image'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
