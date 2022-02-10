@@ -2,6 +2,7 @@ import { MicrophoneIcon, SearchIcon, XIcon } from '@heroicons/react/solid'
 import Image from 'next/image'
 import {useRouter} from 'next/router'
 import { useRef } from 'react'
+import Button from './Button'
 
 const Header = () => {
 
@@ -46,6 +47,8 @@ const Header = () => {
 
         <button hidden type='submit' onClick={search} className=''>search</button>
         </form>
+
+        <Button/>
 
         </div>
        
