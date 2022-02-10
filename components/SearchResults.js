@@ -22,6 +22,7 @@ const SearchResults = ({results}) => {
                     {result.snippet}</p>
             </div>
         ))}
+        <PaginationButtons/>
     </div>
   )
 }
