@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Button from '../components/Button'
+import { ViewGridIcon  } from '@heroicons/react'
 
 export default function Home() {
   return (
@@ -21,6 +21,7 @@ export default function Home() {
             <p className='link'>Gmail</p>
             <p className='link'>Images</p>
 
+              <ViewGridIcon/>
             <Button/>
          </div>
        </header>
