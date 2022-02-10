@@ -16,7 +16,8 @@ const Header = () => {
     }
 
   return (
-    <header>
+    <header className='sticky top-0 bg-white'>
+        <div className='flex w-full p-6 items-center'>
         <Image 
             src={'https://th.bing.com/th/id/R.22afc01b435c8b4e5e73040370bf1cb0?rik=EHaX4gDt5YWFGQ&pid=ImgRaw&r=0'}
             height={40}
@@ -46,6 +47,7 @@ const Header = () => {
         <button hidden type='submit' onClick={search} className=''>search</button>
         </form>
 
+        </div>
        
     </header>
   )
