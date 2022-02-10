@@ -11,8 +11,9 @@ import {
 
 const HeaderOptions = () => {
   return (
-    <div className='flex w-full text-gray-700 justify-evenly items-center'>
-        <div className='flex space-x-4'>
+    <div className='flex w-full text-gray-700 justify-evenly 
+    text-sm lg:text-base lg:justify-start lg:space-x-36 lg:pl-52 border-b-2'>
+        <div className='flex space-x-6'>
             <HeaderOptionsSingular Icon={SearchIcon} title='All' selected/>
             <HeaderOptionsSingular Icon={PhotographIcon} title='Images' />
             <HeaderOptionsSingular Icon={PlayIcon} title='Videos' />
