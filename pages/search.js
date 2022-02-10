@@ -1,8 +1,21 @@
+import Head from "next/head"
 
-const search = () => {
+const Search = () => {
   return (
-    <div>search</div>
+    <div>
+
+        <Head>
+            <title>
+                Search Results
+            </title>
+        </Head>
+
+        <header>
+            
+        </header>
+        
+    </div>
   )
 }
 
-export default search
+export default Search
