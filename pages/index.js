@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Button from '../components/Button'
-import { ViewGridIcon } from '@heroicons/react/solid'
+import { MicrophoneIcon, ViewGridIcon } from '@heroicons/react/solid'
+import { SearchIcon } from '@heroicons/react/outline'
 import Image from 'next/image'
 
 export default function Home() {
@@ -31,11 +32,18 @@ export default function Home() {
 
        <form>
          <Image
-          src={`https://th.bing.com/th/id/R.22afc01b43
-          5c8b4e5e73040370bf1cb0?rik=EHaX4gDt5YWFGQ&pid=ImgRaw&r=0`}
+          src={`https://th.bing.com/th/id/R.22afc01b435c8b4e5e73040370bf1cb0?rik=EHaX4gDt5YWFGQ&pid=ImgRaw&r=0`}
             height={'100'}
             width={'300'}
          />
+
+         <div>
+           <SearchIcon 
+            className='h-5 mr-3 text-gray-500'
+           />
+           <input type={'text'} className='focus:outline-none'/>
+           <MicrophoneIcon/>
+         </div>
        </form>
       
     </div>
