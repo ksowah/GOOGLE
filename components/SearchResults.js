@@ -1,3 +1,4 @@
+import PaginationButtons from "./PaginationButtons"
 
 const SearchResults = ({results}) => {
   return (

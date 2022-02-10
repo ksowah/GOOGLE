@@ -1,8 +1,9 @@
-import React from 'react'
 
 const PaginationButtons = () => {
   return (
-    <div>PaginationButtons</div>
+    <div>
+        
+    </div>
   )
 }
 
