@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Button from '../components/Button'
 
 export default function Home() {
   return (
@@ -13,12 +14,14 @@ export default function Home() {
        <header className='flex justify-between w-full p-5 text-sm text-gray-700'>
          <div className='flex space-x-4'>
             <p className='link'>About</p>
-            <p className='link'>Store</p>
+            <p className='link '>Store</p>
          </div>
 
          <div className='flex space-x-4'>
             <p className='link'>Gmail</p>
             <p className='link'>Images</p>
+
+            <Button/>
          </div>
        </header>
       
