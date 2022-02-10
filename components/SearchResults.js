@@ -6,10 +6,17 @@ const SearchResults = ({results}) => {
             About {results.searchInformation?.formattedTotalResults} results ({results.searchInformation?.formattedSearchTime} seconds)
         </p>
 
-        {results.itams?.map((result) => (
+        {results.items?.map((result) => (
             <div key={result.link} className='max-w-xl mb-8'>
                 <div>
-
+                    <a href={result.link} className='text-sm'>
+                        {result.formattedUrl}
+                    </a>
+                    <a href={result.link}>
+                        <h2 className='truncate text-xl text-blue-800 font-medium'>
+                            {result.title}
+                        </h2>
+                    </a>
                 </div>
                 <p>{result.snippet}</p>
             </div>
