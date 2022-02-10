@@ -9,7 +9,7 @@ const PaginationButtons = () => {
   return (
     <div>
         {startIndex >= 10 && (
-            <Link>
+            <Link href={`/search?term=${router.query.term}&start=${startIndex - 10}`}>
                 <div>
                     <ChevronLeftIcon/>
                     <p>Previous</p>
@@ -17,7 +17,7 @@ const PaginationButtons = () => {
             </Link>
         )}
 
-        <Link href={`/search?term=${router.query.term}&start=${}`}>
+        <Link href={`/search?term=${router.query.term}&start=${startIndex + 10}`}>
         <div>
             <ChevronRightIcon/>
             <p>Next</p>
