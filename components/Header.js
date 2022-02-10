@@ -48,7 +48,9 @@ const Header = () => {
         <button hidden type='submit' onClick={search} className=''>search</button>
         </form>
 
-        <Button/>
+        <Button
+            className='ml-auto'
+        />
 
         </div>
        
