@@ -10,7 +10,7 @@ const PaginationButtons = () => {
     <div>
         {startIndex >= 10 && (
             <Link href={`/search?term=${router.query.term}&start=${startIndex - 10}`}>
-                <div>
+                <div className='flex flex-grow flex-col items-center cursor-pointer hover:underline'>
                     <ChevronLeftIcon className='h-5'/>
                     <p>Previous</p>
                 </div>
@@ -18,7 +18,7 @@ const PaginationButtons = () => {
         )}
 
         <Link href={`/search?term=${router.query.term}&start=${startIndex + 10}`}>
-        <div>
+        <div className='flex flex-grow flex-col items-center cursor-pointer hover:underline'>
             <ChevronRightIcon className='h-5'/>
             <p>Next</p>
         </div>
