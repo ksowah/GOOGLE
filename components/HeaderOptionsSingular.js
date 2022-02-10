@@ -1,7 +1,7 @@
 
-const HeaderOptionsSingular = ({}) => {
+const HeaderOptionsSingular = ({Icon, title, selected}) => {
   return (
-    <div>
+    <div className='flex'>
         
     </div>
   )
