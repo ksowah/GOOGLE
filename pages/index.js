@@ -10,7 +10,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-       
+       <header>
+         <div>
+            <p>About</p>
+            <p>Store</p>
+         </div>
+
+         <div>
+            <p>Gmail</p>
+            <p>Images</p>
+         </div>
+       </header>
       
     </div>
   )
