@@ -37,12 +37,14 @@ export default function Home() {
             width={'300'}
          />
 
-         <div>
+         <div className='flex w-full mt-5 hover:shadow-lg'>
            <SearchIcon 
             className='h-5 mr-3 text-gray-500'
            />
            <input type={'text'} className='focus:outline-none'/>
-           <MicrophoneIcon/>
+           <MicrophoneIcon
+              className='h-5 '
+           />
          </div>
        </form>
       
