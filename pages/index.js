@@ -30,21 +30,27 @@ export default function Home() {
          </div>
        </header>
 
-       <form>
+       <form className='flex flex-col items-center mt-44 flex-grow '>
          <Image
           src={`https://th.bing.com/th/id/R.22afc01b435c8b4e5e73040370bf1cb0?rik=EHaX4gDt5YWFGQ&pid=ImgRaw&r=0`}
             height={'100'}
             width={'300'}
          />
 
-         <div className='flex w-full mt-5 hover:shadow-lg'>
+         <div className='flex w-full mt-5 hover:shadow-lg focus-within:shadow-lg max-w-md rounded-full
+          border border-gray-200 px-5 py-3 items-center sm:max-w-xl lg:max-w-2xl'>
            <SearchIcon 
             className='h-5 mr-3 text-gray-500'
            />
-           <input type={'text'} className='focus:outline-none'/>
+           <input type={'text'} className='focus:outline-none flex-grow'/>
            <MicrophoneIcon
               className='h-5 '
            />
+         </div>
+
+         <div>
+           <button className='btn'>Google Search</button>
+           <button className='btn'>I'm Feeling Lucky</button>
          </div>
        </form>
       
