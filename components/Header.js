@@ -1,8 +1,28 @@
-import React from 'react'
+import Image from 'next/image'
+import {useRouter} from 'next/router'
+import { useRef } from 'react'
 
 const Header = () => {
+
+    const router = useRouter()
+    const searchInputRef = useRef(null)
+
   return (
-    <div>Header</div>
+    <header>
+        <Image 
+            src={'https://th.bing.com/th/id/R.22afc01b435c8b4e5e73040370bf1cb0?rik=EHaX4gDt5YWFGQ&pid=ImgRaw&r=0'}
+            height={40}
+            width={120}
+            className={'cursor-pointer'}
+            onClick={()=> router.push('/')}
+        />
+
+        <form className='flex border border-gray-200'>
+            <input type='text' ref={searchInputRef}
+                className={'flex-grow w-full focus:outline-none'}
+            />
+        </form>
+    </header>
   )
 }
 
