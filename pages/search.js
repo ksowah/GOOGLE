@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Header from "../components/Header"
+import SearchResults from "../components/SearchResults"
 import { Key, context_key } from "../keys"
 import Response from "../Response"
 
