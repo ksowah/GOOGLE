@@ -10,9 +10,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-       <header className='flex justify-between w-full p-5'>
+       <header className='flex justify-between w-full p-5 text-sm text-gray-700'>
          <div className='flex space-x-4'>
-            <p>About</p>
+            <p className='link'>About</p>
             <p>Store</p>
          </div>
 
