@@ -3,6 +3,7 @@ import Image from 'next/image'
 import {useRouter} from 'next/router'
 import { useRef } from 'react'
 import Button from './Button'
+import HeaderOptions from './HeaderOptions'
 
 const Header = () => {
 
@@ -53,6 +54,8 @@ const Header = () => {
         />
 
         </div>
+
+        <HeaderOptions/>
        
     </header>
   )
