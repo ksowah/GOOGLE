@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Button from '../components/Button'
-import { ViewGridIcon  } from '@heroicons/react'
+import { ViewGridIcon } from '@heroicons/react/solid'
 
 export default function Home() {
   return (
