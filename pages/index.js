@@ -13,12 +13,12 @@ export default function Home() {
        <header className='flex justify-between w-full p-5 text-sm text-gray-700'>
          <div className='flex space-x-4'>
             <p className='link'>About</p>
-            <p>Store</p>
+            <p className='link'>Store</p>
          </div>
 
          <div className='flex space-x-4'>
-            <p>Gmail</p>
-            <p>Images</p>
+            <p className='link'>Gmail</p>
+            <p className='link'>Images</p>
          </div>
        </header>
       
