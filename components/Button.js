@@ -18,9 +18,10 @@ const Button = ({className}) => {
           name: user.displayName,
           image: user.photoURL
         })
+
+        console.log(user);
       }else{
         setUser(null)
-        router.push('/login')
       }
     })
   
@@ -31,7 +32,7 @@ const Button = ({className}) => {
                 {
                   loginState ? 
                     <img
-                      src="user.image"
+                      src={user.image}
                     />
                   :
 
