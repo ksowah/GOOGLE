@@ -8,14 +8,21 @@ const Button = ({className}) => {
   const auth = getAuth(app);
   const provider = new GoogleAuthProvider();
   const [loginState, setLoginState] = useState(false)
+  const [user, setUser] = useState(null)
   
   useEffect(()=>{
-      onAuthStateChanged(auth, user => {
-          if(user){
-            setLoginState(true)
-            console.log(user);
-          }
-      })
+     return onAuthStateChanged(auth, user => {
+      if(user){
+        setLoginState(true)
+        setUser({
+          name: user.displayName,
+          image: user.photoURL
+        })
+      }else{
+        setUser(null)
+        router.push('/login')
+      }
+    })
   
   }, [])
 
