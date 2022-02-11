@@ -1,7 +1,7 @@
 
 import { app } from "../firebase"
 import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "firebase/auth";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Button = ({className}) => {
 
