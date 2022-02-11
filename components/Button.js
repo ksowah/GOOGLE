@@ -11,15 +11,16 @@ const Button = ({className}) => {
   const [user, setUser] = useState(null)
   
   useEffect(()=>{
-     return onAuthStateChanged(auth, user => {
-      if(user){
+     return onAuthStateChanged(auth, person => {
+      if(person){
         setLoginState(true)
         setUser({
-          name: user.displayName,
-          image: user.photoURL
+          name: person.displayName,
+          image: person.photoURL
         })
 
         console.log(user);
+
       }else{
         setUser(null)
       }
