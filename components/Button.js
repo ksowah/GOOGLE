@@ -21,6 +21,7 @@ const Button = ({className}) => {
 
 
       }else{
+        setLoginState(false)
         setUser(null)
       }
     })
