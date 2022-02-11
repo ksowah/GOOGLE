@@ -19,13 +19,19 @@ const Button = ({className}) => {
   }, [])
 
   return (
+            <>
+                {
+                  loginState ? 'hello' :
 
-        <button 
-          onClick={()=>signInWithPopup(auth, provider) .catch(error => alert(error.code))}
-            className={`px-5 py-2 bg-sky-600 rounded-lg cursor-pointer text-white font-bold 
-          hover:bg-sky-500 ${className}`}>
-            Sign in
-        </button>
+                  <button 
+                  onClick={()=>signInWithPopup(auth, provider) .catch(error => alert(error.code))}
+                  className={`px-5 py-2 bg-sky-600 rounded-lg cursor-pointer text-white font-bold 
+                  hover:bg-sky-500 ${className}`}>
+                  Sign in
+                  </button>
+                }
+            </>
+        
    
   )
 }
