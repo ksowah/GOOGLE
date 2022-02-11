@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <header className='sticky top-0 bg-white '>
-        <div className='flex w-full p-6 items-center'>
+        <div className='flex flex-col sm:flex-row w-full p-6 items-center'>
         <Image 
             src={'https://th.bing.com/th/id/R.22afc01b435c8b4e5e73040370bf1cb0?rik=EHaX4gDt5YWFGQ&pid=ImgRaw&r=0'}
             height={40}
@@ -28,7 +28,7 @@ const Header = () => {
             onClick={()=> router.push('/')}
         />
 
-            <div className='flex'>
+            <div className='flex w-full'>
                     <form className='flex flex-grow border border-gray-200 rounded-full 
                     shadow-lg max-w-3xl px-6 py-3 ml-10 mr-5 items-center'>
                     <input type='text' ref={searchInputRef}
