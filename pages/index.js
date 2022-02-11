@@ -50,7 +50,7 @@ export default function Home() {
 
        <form className='flex flex-col items-center mt-44 flex-grow w-4/5'>
          <Image
-          src={`https://th.bing.com/th/id/R.22afc01b435c8b4e5e73040370bf1cb0?rik=EHaX4gDt5YWFGQ&pid=ImgRaw&r=0`}
+          src={'https://th.bing.com/th/id/R.22afc01b435c8b4e5e73040370bf1cb0?rik=EHaX4gDt5YWFGQ&pid=ImgRaw&r=0'}
             height={'100'}
             width={'300'}
          />
