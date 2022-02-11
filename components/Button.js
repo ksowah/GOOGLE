@@ -41,7 +41,7 @@ const Button = ({className}) => {
 
                   <button 
                   onClick={()=>signInWithPopup(auth, provider) .catch(error => alert(error.code))}
-                  className={`sm:px-5 sm:py-2 px-2  bg-sky-600 rounded-lg cursor-pointer text-white sm:font-bold 
+                  className={`sm:px-5 sm:py-2 px-2 bg-sky-600 rounded-lg cursor-pointer text-white sm:font-bold 
                   hover:bg-sky-500 ${className}`}>
                   Sign in
                   </button>
