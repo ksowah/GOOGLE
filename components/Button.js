@@ -1,5 +1,10 @@
 
+import { app } from "../firebase"
+
 const Button = ({className}) => {
+
+  
+
   return (
     
         <button 
