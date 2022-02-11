@@ -5,4 +5,4 @@ const Key = process.env.API_KEY
 
 export const context_key = "0421978bbcffd6a14"
 
-export default key
+export default Key
