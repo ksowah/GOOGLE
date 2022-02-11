@@ -29,7 +29,11 @@ const Button = ({className}) => {
   return (
             <>
                 {
-                  loginState ? 'hello' :
+                  loginState ? 
+                    <img
+                      src="user.image"
+                    />
+                  :
 
                   <button 
                   onClick={()=>signInWithPopup(auth, provider) .catch(error => alert(error.code))}
