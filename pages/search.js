@@ -31,8 +31,6 @@ export default Search
 
 export const getServerSideProps = async (context)=> {
     const useDummyData = false
-    const startIndex = context.query.start || '0'
-
     const data = useDummyData ? Response : await fetch(`https://www.googleapis.com/customsearch/v1?key=${Key}&cx=${context_key}&q=${context.query.term}`
     ).then(response => response.json())
 
