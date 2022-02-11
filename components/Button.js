@@ -33,6 +33,7 @@ const Button = ({className}) => {
                   loginState ? 
                     <img
                        src={user?.image}
+                       className='rounded-full border-gray-200 p-px h-12 cursor-pointer'
                     />
                   :
 
