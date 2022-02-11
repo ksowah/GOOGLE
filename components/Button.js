@@ -1,10 +1,22 @@
 
 import { app } from "../firebase"
 import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "firebase/auth";
+import { useEffect } from "react";
 
 const Button = ({className}) => {
 
-
+  const auth = getAuth(app);
+  const provider = new GoogleAuthProvider();
+  const [loginState, setLoginState] = useState(false)
+  
+  useEffect(()=>{
+      onAuthStateChanged(auth, user => {
+          if(user){
+            setLoginState(true)
+          }
+      })
+  
+  }, [])
 
   return (
     
