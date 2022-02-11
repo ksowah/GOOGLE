@@ -13,6 +13,7 @@ const Button = ({className}) => {
       onAuthStateChanged(auth, user => {
           if(user){
             setLoginState(true)
+            console.log(user);
           }
       })
   
