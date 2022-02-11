@@ -2,7 +2,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 Click [here](https://google-coral.vercel.app/) to view the finished project
 
 ## Tools Used
-- 
+- Google API. Get your key [here](https://developers.google.com/custom-search/v1/using_rest)
+- Get context key [here](https://cse.google.com/cse/create/new)
+- Firebase Google Auth Provider
+- Tailwind css
 
 ## Getting Started
 
